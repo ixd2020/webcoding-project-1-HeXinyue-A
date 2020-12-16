@@ -1,13 +1,339 @@
+@charset "utf-8";
 /* CSS files add styling rules to your content */
+
+html {
+  font-size: 16px;
+  background-color: #DBC39C; /*picture from 'https://delmusic.net/home/photo-1490735891913-40897cdaafd1/'*/
+}
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  background-color: white;
+  margin: 0 auto;
+  width: 1980px;
+  max-width: 1020px;
+  min-width: 640px;
 }
 
-h1 {
-  font-style: Georgia Pro Regular font;
-  color: #F7851E;
-  font-size: 80px
+/* header*/
+body header h1 {
+  color: Black;
+  text-align: center;
+  margin: 0;
+  line-height: 2em;
 }
 
+/*Navigation*/
+header nav ul {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #121A2D;
+  display: flex;
+}
+
+header nav ul li {
+  text-align: center;
+  width: 20%;
+  height: inherit;
+  line-height: 2em;
+}
+
+header nav a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header nav li:nth-child(3) {
+  font-family: "Zhang QA", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+}
+
+header nav li:nth-child(1) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(2) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(4) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(5) {
+   padding-top: 7px;
+}
+
+nav > ul > li:hover {
+  background-color: #4D5A7A;
+}
+
+/*Classes*/
+.artstyle, .header2 {
+  padding: 0px 90px;
+}
+
+.artstyle{
+  padding-bottom:10px;
+  margin: 0px;
+}
+
+.header2 {
+  padding-top: 20px;
+}
+
+/*Button Classes*/
+.btn {
+  background-color: #121A2D;
+  opacity: 0.9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 280px;
+}
+
+.btn:hover {
+  background-color: #DCDCDC;
+  transition: 0.5s;
+}
+
+a:hover{
+   text-decoration: none;
+}
+
+/*Section 1*/
+article {
+  width: 300px;
+  margin-left: 20%;
+  margin-right: 50%;
+}
+
+article ul {
+  background-color: #EAD7C0;
+  list-style-type: none;
+  align-self: center;
+  line-height: 20px;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+article ul li {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+div#doodle img {
+  width: 400px;
+  position: relative;
+  left: -100px;
+  top: 100px;
+  float: right;
+}
+
+div#england img {
+  width: 400px;
+  position: relative;
+  left: 105px;
+  top: 0px;
+}
+
+.btn1 {
+  float: right;
+  margin-top: -80px;
+  margin-right: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+/*Section 2*/
+
+
+div#section2 {
+  background-color: #DD5C26;
+  padding-bottom: 5px;
+}
+
+/*WATCH THIS VIDEO!! https://www.youtube.com/watch?v=l55hSbBUdmQ*/
+
+#content {
+  width: 60%;
+  height: 200px;
+  margin-left: 40%;
+  margin-top: -120px;
+  position: relative;
+  z-index:3;
+  background-color: #EA9B43;
+  border: none;
+  display:flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*HOW TO CREATE SHADOWS: https://www.w3schools.com/css/css3_shadows_box.asp*/
+}
+
+#quote {
+  width: 40%;
+  height: auto;
+  margin-left: 10%;
+  margin-top:30px;
+  position: relative;
+  z-index:4;
+  border: none;
+  background-color: #EAD7C0;
+  font-style: italic;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content > p {
+  padding-left: 125px;
+  padding-right: 15px;
+  margin: 0px;
+}
+
+#quote > blockquote {
+  border: 0;
+  font-size: inherit;  
+}
+
+blockquote:before {
+  content: open-quote;
+   font-family:'Times New Roman', Times, serif;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.btn2 {
+  transform: translate(50px, -70px); 
+                    /*right    top*/
+}
+
+/*Section 3*/
+
+.btn3 {
+  display: block;
+  margin:10px auto;
+  z-index: 1;
+}
+
+
+
+/*Section 4*/
+#section4 {
+  background-color: #EA9B43;
+  padding-bottom: 25px;
+}
+
+.btn4 {
+  display: block;
+  margin:auto;
+  z-index: 1;
+}
+
+/*Section 5*/
+
+
+
+
+.wrapper {
+  perspective: 900px;
+  display:flex;
+  margin:0 20px;
+}
+
+.container {
+  height: auto;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  /* box-shadow: 0px 20px 100px #555; */
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.6);
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(30px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.info {
+  color: #fff;
+}
+
+.container-image {
+  padding-top: 15px;
+  width: 100%;
+}
+
+#logo {
+  width:30px;
+}
+
+.instagram {
+  margin: 0;
+}
+
+.tag {
+  padding: 0px 90px;
+}
+
+.s5 {
+  background-color: #DD5C26;
+  margin: 90px auto;
+  padding: 20px 90px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  /*if you ant spacing between the body you can do this:
+    margin: 2em*/
+}
+
+/*Responsive Web coding*/
+@media only screen and (max-width: 800px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    display: flex;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    width: 100%;
+  }
+}

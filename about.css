@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS files add styling rules to your content */
+
+html {
+  font-size: 16px;
+  background-color: #DBC39C; /*picture from 'https://delmusic.net/home/photo-1490735891913-40897cdaafd1/'*/
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  width: 1980px;
+  max-width: 1020px;
+  min-width: 640px;
+}
+
+/* header*/
+body header h1 {
+  color: Black;
+  text-align: center;
+  margin: 0;
+  line-height: 2em;
+}
+
+/*Navigation*/
+header nav ul {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #121A2D;
+  display: flex;
+}
+
+header nav ul li {
+  text-align: center;
+  width: 20%;
+  height: inherit;
+  line-height: 2em;
+}
+
+header nav a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header nav li:nth-child(3) {
+  font-family: "Zhang QA", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+}
+
+header nav li:nth-child(1) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(2) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(4) {
+   padding-top: 7px;
+}
+
+header nav li:nth-child(5) {
+   padding-top: 7px;
+}
+
+nav > ul > li:hover {
+  background-color: #4D5A7A;
+}
+
+/* parallex */
+
+.parallax {
+  /* The image used */
+  background-image: url("https://cdn.glitch.com/f66225c7-6866-4263-9742-c001f272ca98%2FWebcod%20-%20Mr%20Doodle%205.jpg?v=1608108663788");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/*Classes*/
+#sss {
+  background-color: #E0E0E0;
+  padding-bottom:15px;
+
+}
+.abouth2, .aboutcontent{
+  padding: 0px 90px;
+}
+
+.aboutcontent {
+  padding-bottom:10px;
+  margin: 0px;
+}
+
+.abouth2 {
+  padding-top: 20px;
+}
+
+.crowd1 img {
+  width: 450px;
+  display: block;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+.crowd2 img {
+  width: 450px;
+  display: block;
+  position: relative;
+  float: right;
+  left: 10px;
+  top: 50px;
+}
