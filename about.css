@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
   background-color: white;
   margin: 0 auto;
   width: 1980px;
@@ -15,13 +16,15 @@ body {
   min-width: 640px;
 }
 
+
 /* header*/
 body header h1 {
   color: Black;
   text-align: center;
   margin: 0;
-  line-height: 2em;
+  line-height: 2.5em;
 }
+
 
 /*Navigation*/
 header nav ul {
@@ -37,7 +40,7 @@ header nav ul li {
   text-align: center;
   width: 20%;
   height: inherit;
-  line-height: 2em;
+  line-height: 1.9em;
 }
 
 header nav a {
@@ -61,47 +64,91 @@ header nav li:nth-child(3) {
 }
 
 header nav li:nth-child(1) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(2) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(4) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(5) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 nav > ul > li:hover {
   background-color: #4D5A7A;
 }
 
-/* parallex */
-
-.parallax {
-  /* The image used */
-  background-image: url("https://cdn.glitch.com/f66225c7-6866-4263-9742-c001f272ca98%2FWebcod%20-%20Mr%20Doodle%205.jpg?v=1608108663788");
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+a:hover{
+   text-decoration: none;
 }
 
 
 
+/* classes */
+.artstyle, .header2 {
+  padding: 0px 90px;
+}
+
+.artstyle{
+  padding-bottom:10px;
+  margin: 0px;
+}
+
+.header2 {
+  padding-top: 20px;
+}
+
+/*Button Classes*/
+.btn {
+  background-color: #121A2D;
+  opacity: 0.9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 280px;
+}
+
+.btn:hover {
+  background-color: #DCDCDC;
+  transition: 0.5s;
+}
+
+/* parallex */
+.parallax{
+    
+  /* Create the parallax scrolling effect */
+    background-image: url("https://cdn.glitch.com/f66225c7-6866-4263-9742-c001f272ca98%2FWebcod%20-%20Mr%20Doodle%205.jpg?v=1608108663788");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+   
+    /* Set a specific height */
+    min-height: 600px; 
+}
+
+.parallextext {
+  text-align: center;
+}
+
+.adfe, .parallextext {
+  text-align: center;
+}
 
 /*Classes*/
-#sss {
-  background-color: #E0E0E0;
+#section1_1 {
   padding-bottom:15px;
 
 }
@@ -118,19 +165,190 @@ nav > ul > li:hover {
   padding-top: 20px;
 }
 
-.crowd1 img {
-  width: 450px;
-  display: block;
+.section1_2 {
+  background-color:#EAD7C0;
+  height:380px;
+}
+
+#abtdoodle {
+  position:relative;
+  width:430px;
+  height:auto;
+  left:505px;
+  top:43px;
+}
+
+.aboutcontent_p2{
+  position:relative;
+  width:380px;
+  left:90px;
+  bottom:223px;
+}
+
+/* crowd photo */
+#section2 {
+  padding-top:80px;
+  padding-bottom:150px;
+
+}
+
+#containerofcrowd {
   position: relative;
-  left: 50px;
-  top: 50px;
+  width: 80%;
+  display: flex;
+  z-index: 10;
+  margin-left: 5%;
+}
+/* 
+div.container {
+} */
+
+.crowd1 img {
+  width: 390px;
 }
 
 .crowd2 img {
-  width: 450px;
-  display: block;
-  position: relative;
-  float: right;
-  left: 10px;
-  top: 50px;
+  width: 390px;
 }
+
+.box2 {
+  position: relative;
+  background-color: #C89777;
+  float: right;
+  width: 830px;
+  height: 195px; 
+  z-index: 5;
+  transform: translateY(-140px);
+}
+
+.aboutcontent_p3 {
+  padding: 155px 0px 20px 20px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  height: 280px;
+}
+
+#footer {
+  position: relative;
+  padding: 0px 20px 20px 105px;
+}
+  
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    display: flex;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    width: 100%;
+  }
+  
+  .parallax {
+        background-attachment: scroll;
+    }
+
+  .section1_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+  }
+
+  #abtdoodle {
+    position:relative;
+    width:500px;
+    height:auto;
+    left:0;
+    top:0;
+    padding: 15px 0;
+  }
+
+  .aboutcontent_p2{
+    position:relative;
+    height: auto;
+    width:500px;
+    left:0;
+    bottom:0;
+    padding: 15px 0;
+  }
+
+
+  #section2 {
+    /* padding-top:80px;
+    padding-bottom:150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+  }
+
+  #containerofcrowd {
+    width: 100%;
+    height:auto;
+    display: block;
+    z-index: 0;
+    margin:0 auto; 
+  }
+
+  .crowd1 img {
+    display: flex;
+    width: 500px;
+    height: auto;
+    margin:0 auto; 
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+
+  .crowd2 img {
+    display: flex;
+    width: 500px;
+    height: auto;
+    margin:0 auto; 
+    position: relative;
+    padding: 0 0 20px 0;
+
+  }
+
+  .box2 {
+    background-color: #DF9C9C;
+    width: 500px;
+    height: auto; 
+    z-index: 0;
+    transform: translateY(0);
+    padding:  20px ;
+  }
+
+  .aboutcontent_p3 {
+    padding:0 ;
+  }
+
+  #section1_1 {
+    height:auto;
+    width: 500px;
+    margin:0 auto; 
+    text-align: center;
+
+  }
+
+}
+

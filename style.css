@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
   background-color: white;
   margin: 0 auto;
   width: 1980px;
@@ -15,13 +16,15 @@ body {
   min-width: 640px;
 }
 
+
 /* header*/
 body header h1 {
   color: Black;
   text-align: center;
   margin: 0;
-  line-height: 2em;
+  line-height: 2.5em;
 }
+
 
 /*Navigation*/
 header nav ul {
@@ -37,7 +40,7 @@ header nav ul li {
   text-align: center;
   width: 20%;
   height: inherit;
-  line-height: 2em;
+  line-height: 1.9em;
 }
 
 header nav a {
@@ -61,26 +64,30 @@ header nav li:nth-child(3) {
 }
 
 header nav li:nth-child(1) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(2) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(4) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 header nav li:nth-child(5) {
-   padding-top: 7px;
+   padding-top: 9px;
 }
 
 nav > ul > li:hover {
   background-color: #4D5A7A;
 }
 
-/*Classes*/
+a:hover{
+   text-decoration: none;
+}
+
+/* classes */
 .artstyle, .header2 {
   padding: 0px 90px;
 }
@@ -113,24 +120,21 @@ nav > ul > li:hover {
   transition: 0.5s;
 }
 
-a:hover{
-   text-decoration: none;
-}
 
 /*Section 1*/
 article {
   width: 300px;
-  margin-left: 20%;
-  margin-right: 50%;
+  margin-left: 205px;
+  margin-right: 100px;
 }
 
 article ul {
   background-color: #EAD7C0;
   list-style-type: none;
   align-self: center;
-  line-height: 20px;
+  line-height: 22px;
   margin-top: 70px;
-  padding: 10px;
+  padding: 5px;
 }
 
 article ul li {
@@ -141,8 +145,8 @@ article ul li {
 div#doodle img {
   width: 400px;
   position: relative;
-  left: -100px;
-  top: 100px;
+  left: -95px;
+  top: 105px;
   float: right;
 }
 
@@ -155,7 +159,7 @@ div#england img {
 
 .btn1 {
   float: right;
-  margin-top: -80px;
+  margin-top: -120px;
   margin-right: 300px;
   position: relative;
   z-index: 1;
@@ -165,45 +169,51 @@ div#england img {
 
 
 div#section2 {
-  background-color: #DD5C26;
+  background-color: #C89777;
   padding-bottom: 5px;
+  margin-top: 70px; 
+  width: 100%;
 }
 
-/*WATCH THIS VIDEO!! https://www.youtube.com/watch?v=l55hSbBUdmQ*/
+/*WATCH THIS VIDEO!! https://www.youtube.com/watch?v=l55hSbBUdmQ (abt z-index, watched)*/
 
 #content {
   width: 60%;
-  height: 200px;
-  margin-left: 40%;
+  height: 220px;
+  margin-left: 400px;
   margin-top: -120px;
   position: relative;
   z-index:3;
-  background-color: #EA9B43;
   border: none;
   display:flex;
-  align-items: center;
+  align-items: center;  
+}
+
+#content p {
+  padding: 15px 15px 15px 110px;
+  background-color: #EAD7C0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*HOW TO CREATE SHADOWS: https://www.w3schools.com/css/css3_shadows_box.asp*/
 }
 
+.btn2 {
+  transform: translate(30px, -60px); 
+                    /*right    top*/
+}
+
 #quote {
-  width: 40%;
+  width: 415px;
   height: auto;
-  margin-left: 10%;
+  margin-left: 60px;
   margin-top:30px;
   position: relative;
   z-index:4;
   border: none;
-  background-color: #EAD7C0;
+  background-color: #F5F5F5;
   font-style: italic;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#content > p {
-  padding-left: 125px;
-  padding-right: 15px;
-  margin: 0px;
-}
 
 #quote > blockquote {
   border: 0;
@@ -224,10 +234,6 @@ blockquote::after {
   font-weight: bold;
 }
 
-.btn2 {
-  transform: translate(50px, -70px); 
-                    /*right    top*/
-}
 
 /*Section 3*/
 
@@ -238,10 +244,9 @@ blockquote::after {
 }
 
 
-
 /*Section 4*/
 #section4 {
-  background-color: #EA9B43;
+  background-color: #EAD7C0;
   padding-bottom: 25px;
 }
 
@@ -252,10 +257,6 @@ blockquote::after {
 }
 
 /*Section 5*/
-
-
-
-
 .wrapper {
   perspective: 900px;
   display:flex;
@@ -263,7 +264,6 @@ blockquote::after {
 }
 
 .container {
-  height: auto;
   background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
   z-index: 300;
   /* box-shadow: 0px 20px 100px #555; */
@@ -292,7 +292,7 @@ blockquote::after {
   width: 100%;
 }
 
-#logo {
+.logo {
   width:30px;
 }
 
@@ -305,7 +305,7 @@ blockquote::after {
 }
 
 .s5 {
-  background-color: #DD5C26;
+  background-color: #C89777;
   margin: 90px auto;
   padding: 20px 90px;
 }
@@ -315,17 +315,30 @@ blockquote::after {
 footer {
   background-color: black;
   color: white;
-  /*if you ant spacing between the body you can do this:
-    margin: 2em*/
+  height: 280px;
 }
 
+#footer {
+  position: relative;
+  padding: 0px 20px 20px 105px;
+}
+
+
+
+
+
+
+
+
 /*Responsive Web coding*/
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1000px) {
+
+  
   header nav ul {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
   }
 
   header nav ul li {
@@ -335,5 +348,73 @@ footer {
 
   header nav ul li a {
     width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    transform: rotateX(0deg);
+    width: 50%;
+    height: auto;
+    box-shadow:  0px 20px 100px #555;
+    animation: none;
+  }
+
+    .container:nth-child(2), .container:nth-child(1) {
+    margin-bottom:20%;
+  }
+
+    .container:nth-child(1)  {
+      margin-top:30px;
+    }
+
+  .container:hover {
+    cursor: pointer;
+    transition: .5s all ease;
+  }
+
+  div#section2 {
+    background-color: #DD5C26;
+    padding-bottom: 20px;
+    margin-top: 30px; 
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section2 h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #content {
+    width:50%;
+    margin: 0;
+    height: auto;
+    margin:0 0 10px 0;
+  }
+  
+  #content p {
+    padding: 10px 20px;
+    background-color: #EA9B43;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*HOW TO CREATE SHADOWS: https://www.w3schools.com/css/css3_shadows_box.asp*/
+  }
+  
+  #quote {
+    width:50%;
+    margin:0 0 10px 0;
+  }
+
+  .btn2 {
+    margin: 0;
+    transform: none;
   }
 }
