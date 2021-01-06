@@ -29,14 +29,6 @@ ul {
   padding: 10px;
 }
 
-#nav_bar #sign_in {
-  background: #4887ef; 
-  margin-right: 25px;
-  padding: 7px 15px;
-  border-radius: 3px; 
-  font-weight: bold;
-}
-
 .nav-links {
   color: #404040;
 }
@@ -47,7 +39,15 @@ a {
 }
 
 li.nav-links a:hover {
-  text-decoration: underline;
+  color: blue;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef; 
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px; 
+  font-weight: bold;
 }
 
 #sign_in:hover { 
